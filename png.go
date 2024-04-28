@@ -205,7 +205,7 @@ func (png *PNG) parseIHDR(iHDR *Chunk) error {
 	// ```
 	png.Depth = int(tmp[8])
 	png.ColorType = int(tmp[9])
-	allowedct, ok := ct2bd[png.Depth]
+	allowedct, ok := ct2bd[png.ColorType]
 	if !ok {
 		return fmt.Errorf("image with invalid color type - expected one of [0,2,3,4,6], got %d", png.ColorType)
 	}
