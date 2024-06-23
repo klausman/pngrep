@@ -1,3 +1,3 @@
-module github.com/klausman/pngrep
+module pkg.i-no.de/pkg/pngrep
 
 go 1.21
