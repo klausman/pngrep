@@ -1,5 +1,9 @@
 # PNGrep
 
+**NOTE**: As of 2024-06-23 the Go import url of this repo has changed to:
+`pkg.i-no.de/pkg/pngrep`. Issues, merge requests etc should be filed at its new
+source location, https://codeberg.org/klausman/pngrep
+
 A simple tool to grep through the text hunks of PNG images. Similar in use to
 `exigrep`, which does the same for the EXIF tags of JPEG/JFIF files.
 
