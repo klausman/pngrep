@@ -210,7 +210,7 @@ func (png *PNG) parseIHDR(iHDR *Chunk) error {
 		return fmt.Errorf("image with invalid color type - expected one of [0,2,3,4,6], got %d", png.ColorType)
 	}
 	if !slices.Contains(allowedct, png.Depth) {
-		return fmt.Errorf("image with color type 0 and wrong depth - expected %v, got %d", allowedct, png.Depth)
+		return fmt.Errorf("image with color type %d and wrong depth - expected one of %v, got %d", png.ColorType, allowedct, png.Depth)
 	}
 
 	// From https://www.w3.org/TR/png/#11IHDR
